@@ -8,9 +8,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg  fixed-top">
+  <script>
+    AOS.init({
+    duration: 1000,  // Animation duration in milliseconds
+    offset: 100,    // Trigger animations when 100px away from the viewport
+    once: true      // Animation only happens once
+});
+</script>
+
+    <nav class="navbar navbar-expand-lg  fixed-top" >
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -18,83 +28,83 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#col">Home</a>
+                <a class="nav-link" aria-current="page" href="#col"><b>Home</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#about"><b>About</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#skills"><b>Skills</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#projects"><b>Projects</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact"><b>Contact</b></a>
               </li>
             </ul>
           </div>
         </div>
       </nav><br>
 
-      <section>
-        <div class="container" id="col">
+      <section >
+        <div class="container" id="col" data-aos="fade">
             <div class="row justify-content-center">
-                <div class="col-4 align-items-center" style="padding-top: 5%;">
+                <div class="col-4 align-items-center" style="padding-top: 5%;"  data-aos="fade-in">
                     <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(31, 146, 170); font-size: 40px;"><b>Hello!<br> I'm <br>Krithiya</b></p>
                     <h5><b>#Full Stack Developer</b></h5>
-                    <a class="btn" href="#" role="button" id="btn1"><b>Let's Chat</b></a>
+                    <a class="btn" href="#contact" role="button" id="btn1"  data-aos="slide-up"><b>Let's Chat</b></a>
                 </div>
-                <div class="col-6">
+                <div class="col-6"  data-aos="fade-in">
                     <img src="ab.png" class="img-fluid">
                 </div>
-                <div class="col-1" style="text-align: left;padding-top: 24%;">
+                <div class="col-1" style="text-align: left;padding-top: 24%;"  data-aos="slide-left">
                     <a href="#"><i class="bi bi-instagram" id="instag"></i></a><br><br>
-                    <a href="#"><i class="bi bi-linkedin" id="instag"></i></a><br><br>
-                    <a href="#"><i class="bi bi-github" id="instag"></i></a>
+                    <a href="https://www.linkedin.com/in/krithiya-t-a1593a267/"><i class="bi bi-linkedin" id="instag"></i></a><br><br>
+                    <a href="https://github.com/KRITHIYA"><i class="bi bi-github" id="instag"></i></a>
                 </div>
             </div>
         </div>
       </section><br><br><br><br>
 
-      <section id="about">
-        <div>
+      <section id="about" >
+        <div data-aos="zoom-in">
             <p style="font-size: 25px; text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>About Me</b></p>
             <p style="font-size: 15px; text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: grey;">Ooooh, I smell curiosity in the air! Come on in and get to know me!😆💖</p>
         </div><br>
-        <div class="container">
+        <div class="container" data-aos="zoom-out">
             <div class="row">
                 <div class="col-6">
                    <img src="about.png"  class="img-fluid"> 
                 </div>
                 <div class="col-6">
                     <p style="text-align: justify; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding-top: 15%; color: rgb(80, 80, 80);">👋A born and raised Indian girl with nothing more than a passion, a laptop and a dream. A passionate <b>Developer</b> with a love for creativity and problem-solving. I thrive on <b>turning ideas into reality</b> through technology and design. I’ve worked on projects that demonstrate my expertise in creating user-friendly, functional, and aesthetically pleasing solutions.When I’m not coding, you’ll find me exploring my love for <b>Foood,</b> <b>Netflix, Stock Market Research.</b>  I am constantly driven by the desire to grow, learn, and create meaningful solutions that make a difference.</p><br>
-                    <a class="btn" href="krithiya resume updated.pdf" id="btn2"><b>Download Resume <i class="fa-solid fa-download"></i></b></a>
+                    <a class="btn" href="krithiya resume updated.pdf" id="btn2" data-aos="slide-up"><b>Download Resume <i class="fa-solid fa-download"></i></b></a>
                 </div>
             </div>
         </div>
       </section><br><br><br><br><br><br>
 
       <section id="skills">
-        <div class="container">
+        <div class="container" data-aos="fade-in">
             <p style="font-size: 25px; text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>My Skills</b></p>
             <p style="font-size: 15px; text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: grey;">I see you’re snooping around my skills! Well, buckle up, it's gonna be impressive! 😎🚀</p><br><br>
             <div class="row justify-content-center">
-                <div id="skill"><b>Java</b></div>
-                <div id="skill"><b>Html</b></div>
-                <div id="skill"><b>CSS</b></div>
-                <div id="skill"><b>Python</b></div>
-                <div id="skill"><b>MySQL</b></div>
-                <div id="skill1"><b>Spring Boot</b></div>
+                <div id="skill" data-aos="slide-right"><b>Java</b></div>
+                <div id="skill" data-aos="slide-up"><b>Html</b></div>
+                <div id="skill" data-aos="slide-down"><b>CSS</b></div>
+                <div id="skill" data-aos="slide-up"><b>Python</b></div>
+                <div id="skill" data-aos="slide-down"><b>MySQL</b></div>
+                <div id="skill1" data-aos="slide-left"><b>Spring Boot</b></div>
             </div>
         </div>
       </section><br><br><br><br><br><br>
 
       <section id="education">
-        <div class="container">
+        <div class="container" data-aos="slide-up">
             <p style="font-size: 25px; text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>🎓 Qualifications</b></p>
             <p style="font-size: 15px; text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: grey;">Oho! Someone's digging into my qualifications—get ready to be amazed! 🎓😆</p>
-            <div class="row">
+            <div class="row" data-aos="slide-up">
                 <div class="bg-gradient_solid">
                     <div class="container">
                       <div class="steps">
@@ -130,7 +140,7 @@
       </section><br><br><br>
 
       <section id="projects">
-      <div class="container mt-4">
+      <div class="container mt-4"  data-aos="slide-up">
         <p style="font-size: 25px; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
             <b>Projects</b>
         </p>
@@ -138,7 +148,7 @@
             🔨 Turning caffeine into code and ideas into reality! 🚀
         </p>
         <br><br>
-        <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel"  data-aos="slide-up">
             <!-- Indicators -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
@@ -154,7 +164,7 @@
                         <div class="card-body">
                             <h6 class="card-title">Minimalist Static Portfolio Page</h6>
                             <p class="card-text" style="font-size: 12px;font-family:serif;text-align: justify;">A sleek and modern static portfolio website that presents personal projects, skills, and contact details in a visually appealing layout. </p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                            <a href="https://github.com/KRITHIYA/krithiya" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -165,7 +175,7 @@
                         <div class="card-body">
                             <h6 class="card-title">Interactive Personal Branding Website</h6>
                             <p class="card-text" style="font-size: 12px;font-family:serif;text-align: justify;">A feature-rich, dynamic personal branding website designed to showcase skills, projects, and services.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                            <a href="https://github.com/KRITHIYA/full-stack-portfolio-website" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +194,7 @@
     </div><br><br><br><br>
   </section>
 
-  <section id="contact">
+  <section id="contact"  data-aos="slide-up">
     <div class="container">
       <p style="font-size: 25px; text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Contact Me</b></p>
       <p style="font-size: 15px; text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: grey;">Let’s build something awesome together—drop me a message!</p><br>
@@ -211,14 +221,14 @@
               <p style="text-align: left;color: white;font-size: 15px; font-family:Arial, Helvetica, sans-serif ;">Full Stack Developer</p>
             </div>
             <div class="col-4" style="justify-items: left; padding-top: 6%;">
-             <a  href="#" style="color: white; text-decoration: none;padding: 20px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">About</a>
-             <a  href="#" style="color: white; text-decoration: none;padding: 20px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Portfolio</a>
-             <a  href="#" style="color: white; text-decoration: none;padding: 20px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contact</a>
+             <a  href="#about" style="color: white; text-decoration: none;padding: 20px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">About</a>
+             <a  href="#skills" style="color: white; text-decoration: none;padding: 20px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Portfolio</a>
+             <a  href="#contact" style="color: white; text-decoration: none;padding: 20px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contact</a>
             </div>
             <div class="col-4" style="justify-items: left; padding-top: 6%;">
-              <a href="#"><i class="bi bi-linkedin" style="font-size: 20px;color: rgb(255, 255, 255);padding: 20px"></i></a>
-              <a href="#"></a><i class="bi bi-github" style="font-size: 20px;color: rgb(255, 255, 255);padding: 20px"></i></a>
-              <a href="#"></a><i class="bi bi-envelope-at-fill" style="font-size: 20px;color: rgb(255, 255, 255);padding: 20px"></i></a>
+              <a href="https://www.linkedin.com/in/krithiya-t-a1593a267/"><i class="bi bi-linkedin" style="font-size: 20px;color: rgb(255, 255, 255);padding: 20px"></i></a>
+              <a href="https://github.com/KRITHIYA"><i class="bi bi-github" style="font-size: 20px;color: rgb(255, 255, 255);padding: 20px"></i></a>
+              <a href="mailto:krithiya2003@gmail.com"><i class="bi bi-envelope-at-fill" style="font-size: 20px;color: rgb(255, 255, 255);padding: 20px"></i></a>
             </div>
           </div>
           <div class="row">
